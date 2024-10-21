@@ -8,7 +8,7 @@ from tqdm import tqdm
 # Fungsi untuk memuat data
 @st.cache_data
 def load_data():
-    data_dir = Path('..\data')
+    data_dir = Path('data')
     
     if not data_dir.exists():
         raise FileNotFoundError(f"Direktori {data_dir} tidak ditemukan. Pastikan path benar.")
